@@ -1,0 +1,233 @@
+/* montserrat-500 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/assets/fonts/montserrat-v31-latin-500.woff2') format('woff2'); 
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; 
+}
+
+/* montserrat-700 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/assets/fonts/montserrat-v31-latin-700.woff2') format('woff2');
+  font-weight: 700; 
+  font-style: normal;
+  font-display: swap; 
+}
+
+/* fraunces-700 - latin */
+@font-face {
+  font-family: 'Fraunces';
+  src: url('/assets/fonts/fraunces-v38-latin-700.woff2') format('woff2'); 
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; 
+}
+
+
+/*--CSS RESET--*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  height: 100%;
+}
+
+/* Remove list styles on ul, ol elements */
+ul, ol {
+  list-style: none;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+ 
+
+:root {
+  /* == Color Pallete == */
+
+  /* - Primary Clors */
+  --clr-green-500: hsl(158, 36%, 37%);
+  --clr-green-700: hsl(158, 42%, 18%);
+
+  /*Neutral Colors */
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-cream: hsl(30, 38%, 92%);
+  --clr-grey: hsl(228, 12%, 48%);
+  --clr-black: hsl(212, 21%, 14%);
+
+  /* == Fonts == */
+  --ff-heading: 'Fraunces', serif;
+  --ff-body: 'Montserrat', sans-serif;
+
+  /* == Weights == */
+  --fw-fraunces: 700;
+
+  /* Montserrat Weights */
+  --fw-medium: 500;
+  --fw-bold: 700;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-height: 100svh;
+  background-color: var(--clr-cream);
+  font-family: var(--ff-body);
+  color: var(--clr-grey);
+  font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+  line-height: 1.5;
+}
+
+#main__product--card {
+  width: 90%;
+  max-width: clamp(24rem, 30vw, 40rem);
+  height: auto;
+  max-height: fit-content;
+  background-color: var(--clr-white);
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+
+.mobile-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.desktop-image {
+  display: none;
+}
+
+.main__product--details {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 1.5rem;
+  gap: 1rem;
+}
+
+.main__product--type {
+  font-family: var(--ff-body);
+  letter-spacing: 0.12rem;
+}
+
+.main__product--heading {
+  font-family: var(--ff-heading);
+  font-weight: var(--fw-medium);
+  color: var(--clr-black);
+}
+
+.main__product--description {
+  font-family: var(--ff-body);
+  font-size: 0.9rem;
+}
+
+.main__price--container {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.new-price {
+  color: var(--clr-green-500);
+  font-family: var(--ff-heading);
+  font-weight: var(--fw-bold);
+  font-size: 2rem;
+}
+
+.old-price {
+  text-decoration: line-through;
+  font-size: 0.875rem;
+}
+
+.main__cart--btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-green-500);
+  color: var(--clr-cream);
+  width: 100%;
+  padding: 0.88rem 1rem;
+  border: none;
+  border-radius: 0.4rem;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.main__cart--btn:hover {
+  background-color: var(--clr-green-700);
+  transform: translateY(-0.2rem);
+}
+
+
+/* == Styles for Larger Screen Sizes == */
+
+@media screen and (min-width:37.5rem) {
+
+  #main__product--card {
+    max-width: clamp(32rem, 60vw, 36rem);
+    height: clamp(28rem, 55vh, 40rem);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.3rem;
+  }
+
+  .mobile-image {
+    display: none;
+  }
+
+ .desktop-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .main__product--details {
+    gap: 1.5rem;
+  }
+}
+
+
+
