@@ -1,7 +1,7 @@
 /* montserrat-500 - latin */
 @font-face {
   font-family: 'Montserrat';
-  src: url('/assets/fonts/montserrat-v31-latin-500.woff2') format('woff2'); 
+  src: url('assets/fonts/montserrat-v31-latin-500.woff2') format('woff2'); 
   font-weight: 500;
   font-style: normal;
   font-display: swap; 
@@ -10,7 +10,7 @@
 /* montserrat-700 - latin */
 @font-face {
   font-family: 'Montserrat';
-  src: url('/assets/fonts/montserrat-v31-latin-700.woff2') format('woff2');
+  src: url('assets/fonts/montserrat-v31-latin-700.woff2') format('woff2');
   font-weight: 700; 
   font-style: normal;
   font-display: swap; 
@@ -19,7 +19,7 @@
 /* fraunces-700 - latin */
 @font-face {
   font-family: 'Fraunces';
-  src: url('/assets/fonts/fraunces-v38-latin-700.woff2') format('woff2'); 
+  src: url('assets/fonts/fraunces-v38-latin-700.woff2') format('woff2'); 
   font-weight: 700;
   font-style: normal;
   font-display: swap; 
