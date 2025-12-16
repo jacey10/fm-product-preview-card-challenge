@@ -200,6 +200,13 @@ body {
 }
 
 
+@media (prefers-reduced-motion: reduce) {
+  .main__cart--btn {
+      transition: none;
+  }
+}
+
+
 /* == Styles for Larger Screen Sizes == */
 
 @media screen and (min-width:37.5rem) {

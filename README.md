@@ -16,36 +16,35 @@ This is a solution to the [Product preview card component challenge on Frontend 
 ## Overview
 
 ### Screenshot
-![](./assets/images/Frontend%20Mentor%20-%20Recipe%20page%20-%20[127.0.0.1].png)
+![](./assets/images/22.png)
 
 
 ### Links
-- Solution URL: (https://github.com/jacey10/fm-recipe-page-challenge)
-- Live Site URL: (https://jacey10.github.io/fm-recipe-page-challenge/)
+- Solution URL: (https://github.com/jacey10/fm-product-preview-card-challenge)
+- Live Site URL: (https://jacey10.github.io/fm-product-preview-card-challenge/)
 
 ## My process
 
 ### Built with
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
+- Flexbox Layout
+- CSS GRID Layout
 - Mobile-first workflow
+- Principles of Web Accessibility
 
 
 ### What I learned
-- I had a better understanding of how to use flexbox to create responsive layouts and where to use it.
-- I haven't really worked with lists and tables in a long time. Neither did I have fully understand how to style them. While doing so, I stumbled on some problems like choosing the right border-bottom for the table and styling markers for list. This challenge gave me the opportunity to learn a lot more about how to do all these.
-- I had a better understanding of "width:100%" and how elements with this property expands to fill the width of their containers.
-- I implemented the mobile first design, before writing media queries for larger screens (i.e. tablets and desktops).
-- With the aid of ChatGPT, I learned how to use customers markers instead of default list markers to avoid layout issues.
+
+- I recently learned CSS Grid and how it is used for two dimensional layouts and decided to apply it to the desktop view for this particular project. It was so simple to implement.
+- The design appeared to be very simple and I was excited to dive into building it. Even though I implemented, mobile first principles, the product card on mobile screens didn't look good at all. So, I focused on the desktop. Everything looked good on the desktop but when I reduced screen sizes (larger screens), I noticed that the image and texts where shrinking and they weren't filling up their parent element (the Grid container), because it was also shrinking. After looking at two solutions from other members, I realise it was a problem of "width" and "height". So, I gave the Grid container a width and height (for both mobile and desktop), using the CLAMP FUNCTION.
+- I struggled with changing the images from mobile to desktop, but then I found a way around it by using display of "block" to reveal one and "none" to hide the other. For the moblile image, I gave it a height, to reduce overflow and size appropriately too.
 
 ### Continued development
 - I would continue to explore how to create layouts that are responsive across many screens and devices.
-- I would learn more about styling lists and tables.
-- I would also learn more about using Absolute positioning.
-
+- I would practice more with CSS Grids
 
 ## Author
-- Website - [James Chima](https://www.your-site.com)
+- Website - [James Chima](https://jacey.hashnode.dev/)
 - Frontend Mentor - [@jacey10](https://www.frontendmentor.io/profile/jacey10)
 - Twitter - [@jacey_opara](https://x.com/jacey_opara)
