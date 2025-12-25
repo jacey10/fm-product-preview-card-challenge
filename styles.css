@@ -81,11 +81,11 @@ textarea, select {
 :root {
   /* == Color Pallete == */
 
-  /* - Primary Clors */
+  /* Primary Colors */
   --clr-green-500: hsl(158, 36%, 37%);
   --clr-green-700: hsl(158, 42%, 18%);
 
-  /*Neutral Colors */
+  /* Neutral Colors */
   --clr-white: hsl(0, 0%, 100%);
   --clr-cream: hsl(30, 38%, 92%);
   --clr-grey: hsl(228, 12%, 48%);
@@ -131,7 +131,6 @@ body {
   display: block;
   max-width: 100%;
   height: 15.95rem;
-  
 }
 
 .desktop-image {
@@ -202,7 +201,7 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   .main__cart--btn {
-      transition: none;
+    transition: none;
   }
 }
 
