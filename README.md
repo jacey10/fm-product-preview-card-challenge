@@ -45,6 +45,6 @@ This is a solution to the [Product preview card component challenge on Frontend 
 - I would practice more with CSS Grids
 
 ## Author
-- Website - [James Chima](https://jacey.hashnode.dev/)
+- Website - [Jacey Blog](https://www.jacey.hashnode.dev/)
 - Frontend Mentor - [@jacey10](https://www.frontendmentor.io/profile/jacey10)
-- Twitter - [@jacey_opara](https://x.com/jacey_opara)
+- Twitter - [@jacey_muna](https://x.com/jacey_muna)
